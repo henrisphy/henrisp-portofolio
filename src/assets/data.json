@@ -1,0 +1,29 @@
+{
+  "personal": {
+    "name": "henrisp",
+    "tagline": "Creative Full Stack Developer",
+    "photo": "images/your-photo.jpg",
+    "links": {
+      "github": "https://github.com/henrisphy",
+      "linkedin": "https://linkedin.com/in/henri-setyo-pambudi"
+    },
+    "contact": {
+      "email": "henrisphy23@gmail.com",
+      "phone": "+62338573092"
+    }
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Project 1",
+      "description": "A digital wedding invitation web-based built with React and Next.js",
+      "image": [
+        "/images/project1-1.jpg",
+        "/images/project1-2.jpg",
+        "/images/project1-3.jpg"
+      ],
+      "tags": ["React", "Next.js", "MongoDB"],
+      "url": "https://project1.example.com"
+    }
+  ]
+}
