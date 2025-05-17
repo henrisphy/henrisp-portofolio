@@ -138,6 +138,7 @@ const Portfolio = () => {
                   style={{
                     fontFamily: fonts.primary,
                     fontSize: "1.25rem",
+
                     marginBottom: "0.5rem",
                     color: colors.dark,
                   }}
@@ -149,6 +150,7 @@ const Portfolio = () => {
                     fontFamily: fonts.primary,
                     color: colors.text,
                     marginBottom: "1rem",
+
                     fontSize: "0.9rem",
                   }}
                 >
@@ -208,6 +210,7 @@ const Portfolio = () => {
               maxWidth: "800px",
               width: "100%",
               maxHeight: "90vh",
+              height: "70vh",
               overflowY: "auto",
               padding: "2rem",
               position: "relative",
@@ -219,13 +222,15 @@ const Portfolio = () => {
               onClick={closeProject}
               style={{
                 position: "absolute",
-                top: "1rem",
-                right: "1rem",
+                top: "2.3rem",
+                right: "3rem",
                 background: "none",
                 border: "none",
                 fontSize: "1.5rem",
                 cursor: "pointer",
                 color: colors.dark,
+                zIndex: 1000,
+                transition: "color 0.3s ease",
                 ":hover": {
                   color: colors.accent,
                 },
@@ -238,13 +243,13 @@ const Portfolio = () => {
               style={{
                 display: "flex",
                 flexDirection: "column",
-                gap: "2rem",
+                gap: "1rem",
               }}
             >
               {/* Slider Container */}
               <div
                 style={{
-                  height: "600px",
+                  height: "400px",
                   overflow: "hidden",
                   borderRadius: "5px",
                   position: "relative",
@@ -262,13 +267,14 @@ const Portfolio = () => {
                     color: "white",
                     border: "none",
                     borderRadius: "50%",
-                    width: "40px",
-                    height: "40px",
+                    width: "35px",
+                    height: "35px",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                     cursor: "pointer",
                     zIndex: 10,
+                    fontSize: "1rem",
                     transition: "all 0.3s ease",
                     ":hover": {
                       background: "rgba(0,0,0,0.7)",
@@ -312,13 +318,14 @@ const Portfolio = () => {
                     color: "white",
                     border: "none",
                     borderRadius: "50%",
-                    width: "40px",
-                    height: "40px",
+                    width: "35px",
+                    height: "35px",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                     cursor: "pointer",
                     zIndex: 10,
+                    fontSize: "1rem",
                     transition: "all 0.3s ease",
                     ":hover": {
                       background: "rgba(0,0,0,0.7)",
@@ -336,7 +343,7 @@ const Portfolio = () => {
                     left: "50%",
                     transform: "translateX(-50%)",
                     display: "flex",
-                    gap: "8px",
+                    gap: "7px",
                   }}
                 >
                   {selectedProject.image.map((_, index) => (
@@ -370,8 +377,8 @@ const Portfolio = () => {
                 <h3
                   style={{
                     fontFamily: fonts.secondary,
-                    fontSize: "2rem",
-                    marginBottom: "1rem",
+                    fontSize: "1.4rem",
+                    marginBottom: "0.4rem",
                     color: colors.primary,
                   }}
                 >
@@ -381,7 +388,8 @@ const Portfolio = () => {
                   style={{
                     fontFamily: fonts.primary,
                     color: colors.text,
-                    marginBottom: "1.5rem",
+                    marginBottom: "0.5rem",
+                    fontSize: "0.8rem",
                     lineHeight: 1.6,
                   }}
                 >
@@ -393,7 +401,8 @@ const Portfolio = () => {
                     display: "flex",
                     flexWrap: "wrap",
                     gap: "0.5rem",
-                    marginBottom: "2rem",
+
+                    marginBottom: "0.8rem",
                   }}
                 >
                   {selectedProject.tags.map((tag, index) => (
@@ -402,9 +411,10 @@ const Portfolio = () => {
                       style={{
                         backgroundColor: colors.primary,
                         color: colors.light,
-                        padding: "0.5rem 1rem",
+                        padding: "0.5rem 0.8rem",
                         borderRadius: "50px",
-                        fontSize: "0.85rem",
+                        fontSize: "0.5rem",
+
                         fontFamily: fonts.primary,
                       }}
                     >
@@ -419,13 +429,15 @@ const Portfolio = () => {
                   rel="noopener noreferrer"
                   style={{
                     display: "inline-block",
-                    padding: "0.75rem 1.5rem",
+                    padding: "0.75rem 1.2rem",
                     backgroundColor: colors.accent,
+
                     color: colors.light,
                     borderRadius: "50px",
                     textDecoration: "none",
                     fontFamily: fonts.primary,
                     fontWeight: "600",
+                    fontSize: "0.8rem",
                     transition: "all 0.3s ease",
                     ":hover": {
                       backgroundColor: colors.primary,

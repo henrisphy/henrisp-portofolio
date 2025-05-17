@@ -1,5 +1,6 @@
 import data from "../assets/data.json";
 import { colors, fonts } from "../styles";
+import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -51,7 +52,7 @@ const Footer = () => {
               },
             }}
           >
-            GitHub
+            <FaGithub />
           </a>
           <a
             href={data.personal.links.linkedin}
@@ -67,7 +68,7 @@ const Footer = () => {
               },
             }}
           >
-            LinkedIn
+            <FaLinkedin />
           </a>
           <a
             href={`mailto:${data.personal.contact.email}`}
@@ -81,7 +82,7 @@ const Footer = () => {
               },
             }}
           >
-            Email
+            <FaEnvelope />
           </a>
         </div>
 

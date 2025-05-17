@@ -16,15 +16,15 @@
     {
       "id": 1,
       "title": "Digital Wedding Invitation",
-      "description": "A digital wedding invitation web-based full customized using floral theme",
+      "description": "A digital wedding invitation web-based full customized using floral theme.",
       "image": [
         "images/project1-1.jpg",
         "images/project1-2.jpg",
         "images/project1-3.jpg",
         "images/project1-4.jpg"
       ],
-      "tags": ["React", "Next.js", "Figma"],
-      "url": "https://project1.example.com"
+      "tags": ["React", "Next.js", ".jsx"],
+      "url": "https://elma-irul.com"
     },
     {
       "id": 2,

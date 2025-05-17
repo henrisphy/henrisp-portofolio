@@ -71,7 +71,7 @@ const Hero = () => {
         <h1
           style={{
             fontFamily: fonts.secondary,
-            fontSize: "3rem",
+            fontSize: "2rem",
             marginBottom: "1rem",
             color: colors.dark,
             lineHeight: 1.2,
@@ -83,10 +83,10 @@ const Hero = () => {
         <h2
           style={{
             fontFamily: fonts.primary,
-            fontSize: "1.5rem",
-            fontWeight: "normal",
+            fontSize: "1rem",
+            fontWeight: "bolder",
             color: colors.primary,
-            marginBottom: "2rem",
+            marginBottom: "1rem",
           }}
         >
           {data.personal.tagline}
@@ -96,19 +96,21 @@ const Hero = () => {
           style={{
             display: "flex",
             gap: "1rem",
-            marginTop: "2rem",
+            marginTop: "1.3rem",
           }}
         >
           <a
             href="#portfolio"
             style={{
-              padding: "0.75rem 1.5rem",
+              padding: "0.75rem 0.9rem",
               backgroundColor: colors.primary,
               color: colors.light,
               borderRadius: "50px",
               textDecoration: "none",
               fontFamily: fonts.primary,
               fontWeight: "600",
+              fontSize: "0.8rem",
+
               transition: "all 0.3s ease",
               ":hover": {
                 backgroundColor: colors.accent,
@@ -121,7 +123,7 @@ const Hero = () => {
           <a
             href="#contact"
             style={{
-              padding: "0.75rem 1.5rem",
+              padding: "0.75rem 0.9rem",
               backgroundColor: "transparent",
               color: colors.primary,
               border: `2px solid ${colors.primary}`,
@@ -129,6 +131,7 @@ const Hero = () => {
               textDecoration: "none",
               fontFamily: fonts.primary,
               fontWeight: "600",
+              fontSize: "0.8rem",
               transition: "all 0.3s ease",
               ":hover": {
                 backgroundColor: colors.primary,
