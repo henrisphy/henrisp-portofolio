@@ -47,14 +47,16 @@ const Hero = () => {
               width: "100%",
               height: "100%",
               objectFit: "cover",
-              display: "block", // Tambahkan ini
+              display: "block",
+              top: 0,
+              left: 0,
             }}
             onError={(e) => {
               e.target.onerror = null;
               e.target.src =
                 "data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Crect fill='%23" +
                 colors.accent.replace("#", "") +
-                "' width='200' height='200'/%3E%3Ctext fill='%23ffffff' font-family='" +
+                "' width='100%' height='100%'/%3E%3Ctext fill='%23ffffff' font-family='" +
                 fonts.primary +
                 "' font-size='50' dy='.3em' text-anchor='middle' x='100' y='100'%3E" +
                 data.personal.name

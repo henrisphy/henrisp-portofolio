@@ -43,7 +43,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             style={{
               color: colors.light,
-              fontSize: "1.25rem",
+              fontSize: "0.9rem",
               transition: "all 0.3s ease",
               ":hover": {
                 color: colors.accent,
@@ -59,7 +59,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             style={{
               color: colors.light,
-              fontSize: "1.25rem",
+              fontSize: "0.9rem",
               transition: "all 0.3s ease",
               ":hover": {
                 color: colors.accent,
@@ -73,7 +73,7 @@ const Footer = () => {
             href={`mailto:${data.personal.contact.email}`}
             style={{
               color: colors.light,
-              fontSize: "1.25rem",
+              fontSize: "0.9rem",
               transition: "all 0.3s ease",
               ":hover": {
                 color: colors.accent,

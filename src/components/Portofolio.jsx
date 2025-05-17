@@ -244,7 +244,7 @@ const Portfolio = () => {
               {/* Slider Container */}
               <div
                 style={{
-                  height: "400px",
+                  height: "600px",
                   overflow: "hidden",
                   borderRadius: "5px",
                   position: "relative",

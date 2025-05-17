@@ -8,6 +8,8 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -17,16 +19,33 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here you would typically send the form data to a server
-    console.log("Form submitted:", formData);
-    alert("Thank you for your message! I will get back to you soon.");
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      // Ganti dengan endpoint Formspree atau backend Anda
+      const response = await fetch("https://formspree.io/f/your-form-id", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus("success");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setSubmitStatus("error");
+      }
+    } catch (error) {
+      setSubmitStatus("error");
+      console.error("Error submitting form:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -36,11 +55,12 @@ const Contact = () => {
         padding: "4rem 2rem",
         backgroundColor: colors.light,
         position: "relative",
+        minHeight: "calc(100vh - 100px)",
       }}
     >
       <div
         style={{
-          maxWidth: "800px",
+          maxWidth: "1200px",
           margin: "0 auto",
           textAlign: "center",
         }}
@@ -48,7 +68,7 @@ const Contact = () => {
         <h2
           style={{
             fontFamily: fonts.secondary,
-            fontSize: "2.5rem",
+            fontSize: "clamp(2rem, 5vw, 3rem)",
             marginBottom: "1rem",
             color: colors.dark,
           }}
@@ -60,7 +80,10 @@ const Contact = () => {
             fontFamily: fonts.primary,
             color: colors.text,
             marginBottom: "3rem",
-            fontSize: "1.1rem",
+            fontSize: "clamp(1rem, 2vw, 1.2rem)",
+            maxWidth: "700px",
+            marginLeft: "auto",
+            marginRight: "auto",
           }}
         >
           Have a project in mind or want to collaborate? Feel free to reach out!
@@ -71,11 +94,12 @@ const Contact = () => {
             display: "flex",
             flexDirection: "column",
             gap: "2rem",
-            "@media (min-width: 768px)": {
+            "@media (min-width: 992px)": {
               flexDirection: "row",
             },
           }}
         >
+          {/* Contact Information */}
           <div
             style={{
               flex: 1,
@@ -85,6 +109,7 @@ const Contact = () => {
               borderRadius: "10px",
               boxShadow: "0 5px 15px rgba(0,0,0,0.1)",
               ...artStyles.watercolor,
+              minHeight: "100%",
             }}
           >
             <h3
@@ -105,6 +130,7 @@ const Contact = () => {
                 gap: "1.5rem",
               }}
             >
+              {/* Email */}
               <div
                 style={{
                   display: "flex",
@@ -123,6 +149,7 @@ const Contact = () => {
                     justifyContent: "center",
                     color: colors.light,
                     fontSize: "1.25rem",
+                    flexShrink: 0,
                   }}
                 >
                   ✉️
@@ -144,6 +171,7 @@ const Contact = () => {
                       fontFamily: fonts.primary,
                       color: colors.text,
                       textDecoration: "none",
+                      wordBreak: "break-all",
                       ":hover": {
                         color: colors.accent,
                       },
@@ -154,6 +182,7 @@ const Contact = () => {
                 </div>
               </div>
 
+              {/* WhatsApp */}
               <div
                 style={{
                   display: "flex",
@@ -172,6 +201,7 @@ const Contact = () => {
                     justifyContent: "center",
                     color: colors.light,
                     fontSize: "1.25rem",
+                    flexShrink: 0,
                   }}
                 >
                   📱
@@ -185,10 +215,12 @@ const Contact = () => {
                       marginBottom: "0.25rem",
                     }}
                   >
-                    Phone
+                    WhatsApp
                   </p>
                   <a
-                    href={`tel:${data.personal.contact.phone}`}
+                    href={data.personal.contact.phone} // Langsung pakai link WhatsApp
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{
                       fontFamily: fonts.primary,
                       color: colors.text,
@@ -198,11 +230,12 @@ const Contact = () => {
                       },
                     }}
                   >
-                    {data.personal.contact.phone}
+                    +62 823-3857-3092
                   </a>
                 </div>
               </div>
 
+              {/* Social Media */}
               <div
                 style={{
                   display: "flex",
@@ -221,6 +254,7 @@ const Contact = () => {
                     justifyContent: "center",
                     color: colors.light,
                     fontSize: "1.25rem",
+                    flexShrink: 0,
                   }}
                 >
                   🔗
@@ -240,6 +274,8 @@ const Contact = () => {
                     style={{
                       display: "flex",
                       gap: "1rem",
+                      flexWrap: "wrap",
+                      alignItems: "center",
                     }}
                   >
                     <a
@@ -250,13 +286,22 @@ const Contact = () => {
                         fontFamily: fonts.primary,
                         color: colors.text,
                         textDecoration: "none",
+                        paddingRight: "1rem",
+                        borderRight: `1px solid ${colors.text}`,
+                        opacity: 1,
+                        marginRight: "0",
+                        height: "60%",
+                        display: "flex",
+                        alignItems: "center",
                         ":hover": {
                           color: colors.accent,
+                          opacity: 0.9,
                         },
                       }}
                     >
                       GitHub
                     </a>
+
                     <a
                       href={data.personal.links.linkedin}
                       target="_blank"
@@ -278,6 +323,7 @@ const Contact = () => {
             </div>
           </div>
 
+          {/* Contact Form */}
           <div
             style={{
               flex: 1,
@@ -298,6 +344,36 @@ const Contact = () => {
             >
               Send Me a Message
             </h3>
+
+            {submitStatus === "success" && (
+              <div
+                style={{
+                  padding: "1rem",
+                  backgroundColor: "rgba(46, 125, 50, 0.2)",
+                  color: "#2e7d32",
+                  borderRadius: "4px",
+                  marginBottom: "1.5rem",
+                  border: "1px solid #2e7d32",
+                }}
+              >
+                Thank you! Your message has been sent successfully.
+              </div>
+            )}
+
+            {submitStatus === "error" && (
+              <div
+                style={{
+                  padding: "1rem",
+                  backgroundColor: "rgba(211, 47, 47, 0.2)",
+                  color: "#d32f2f",
+                  borderRadius: "4px",
+                  marginBottom: "1.5rem",
+                  border: "1px solid #d32f2f",
+                }}
+              >
+                Oops! Something went wrong. Please try again later.
+              </div>
+            )}
 
             <form
               onSubmit={handleSubmit}
@@ -331,6 +407,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
+                  minLength="2"
                   style={{
                     padding: "0.75rem",
                     border: `1px solid ${colors.secondary}`,
@@ -407,12 +484,14 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
+                  minLength="10"
                   style={{
                     padding: "0.75rem",
                     border: `1px solid ${colors.secondary}`,
                     borderRadius: "5px",
                     fontFamily: fonts.primary,
                     resize: "vertical",
+                    minHeight: "150px",
                     ":focus": {
                       outline: "none",
                       borderColor: colors.primary,
@@ -424,9 +503,12 @@ const Contact = () => {
 
               <button
                 type="submit"
+                disabled={isSubmitting}
                 style={{
                   padding: "0.75rem 1.5rem",
-                  backgroundColor: colors.primary,
+                  backgroundColor: isSubmitting
+                    ? colors.secondary
+                    : colors.primary,
                   color: colors.light,
                   border: "none",
                   borderRadius: "50px",
@@ -435,12 +517,18 @@ const Contact = () => {
                   cursor: "pointer",
                   transition: "all 0.3s ease",
                   ":hover": {
-                    backgroundColor: colors.accent,
-                    transform: "translateY(-3px)",
+                    backgroundColor: isSubmitting
+                      ? colors.secondary
+                      : colors.accent,
+                    transform: isSubmitting ? "none" : "translateY(-3px)",
+                  },
+                  ":disabled": {
+                    opacity: 0.7,
+                    cursor: "not-allowed",
                   },
                 }}
               >
-                Send Message
+                {isSubmitting ? "Sending..." : "Send Message"}
               </button>
             </form>
           </div>
@@ -459,6 +547,7 @@ const Contact = () => {
           backgroundColor: colors.accent,
           opacity: 0.1,
           filter: "blur(20px)",
+          zIndex: -1,
         }}
       ></div>
       <div
@@ -472,6 +561,7 @@ const Contact = () => {
           backgroundColor: colors.primary,
           opacity: 0.1,
           filter: "blur(30px)",
+          zIndex: -1,
         }}
       ></div>
     </section>

@@ -9,20 +9,33 @@
     },
     "contact": {
       "email": "henrisphy23@gmail.com",
-      "phone": "+62338573092"
+      "phone": "https://wa.me/6282338573092"
     }
   },
   "projects": [
     {
       "id": 1,
-      "title": "Project 1",
-      "description": "A digital wedding invitation web-based built with React and Next.js",
+      "title": "Digital Wedding Invitation",
+      "description": "A digital wedding invitation web-based full customized using floral theme",
       "image": [
-        "/images/project1-1.jpg",
-        "/images/project1-2.jpg",
-        "/images/project1-3.jpg"
+        "images/project1-1.jpg",
+        "images/project1-2.jpg",
+        "images/project1-3.jpg",
+        "images/project1-4.jpg"
       ],
-      "tags": ["React", "Next.js", "MongoDB"],
+      "tags": ["React", "Next.js", "Figma"],
+      "url": "https://project1.example.com"
+    },
+    {
+      "id": 2,
+      "title": "Brand Catalogue",
+      "description": "Coffeeshop brand catalogue web-based",
+      "image": [
+        "images/project1-1.jpg",
+        "images/project1-2.jpg",
+        "images/project1-3.jpg"
+      ],
+      "tags": ["React", ".jsx", "MongoDB"],
       "url": "https://project1.example.com"
     }
   ]
