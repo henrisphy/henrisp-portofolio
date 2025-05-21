@@ -342,7 +342,7 @@ const Contact = () => {
                 color: colors.primary,
               }}
             >
-              Send Me a Message
+              Send Secret Message
             </h3>
 
             {submitStatus === "success" && (
@@ -530,6 +530,18 @@ const Contact = () => {
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </button>
+              <p
+                style={{
+                  textAlign: "left",
+                  color: "#333",
+                  fontSize: "0.9rem",
+                  lineHeight: "1.5",
+                  margin: "0.5rem 0",
+                }}
+              >
+                I'm very sorry because this form can't functioning as it expect.
+                This new feature is under development right now :)
+              </p>
             </form>
           </div>
         </div>
