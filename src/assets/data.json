@@ -16,27 +16,18 @@
     {
       "id": 1,
       "title": "Digital Wedding Invitation",
-      "description": "A digital wedding invitation web-based full customized using floral theme.",
+      "description": "A digital wedding invitation web-based full customized using floral theme, text and element arrangement, countdown date, music background, navigation sidebar, masonary gallery, dan form database integration.",
       "image": [
-        "images/project1-1.jpg",
-        "images/project1-2.jpg",
-        "images/project1-3.jpg",
-        "images/project1-4.jpg"
+        "images/thumbnail1.png",
+        "images/project1-1.png",
+        "images/project1-2.png",
+        "images/project1-3.png",
+        "images/project1-4.png",
+        "images/project1-5.png"
       ],
       "tags": ["React", "Next.js", ".jsx"],
-      "url": "https://elma-irul.com"
-    },
-    {
-      "id": 2,
-      "title": "Brand Catalogue",
-      "description": "Coffeeshop brand catalogue web-based",
-      "image": [
-        "images/project1-1.jpg",
-        "images/project1-2.jpg",
-        "images/project1-3.jpg"
-      ],
-      "tags": ["React", ".jsx", "MongoDB"],
-      "url": "https://project1.example.com"
+      "url": "https://contoh-link.com",
+      "showUrl": false
     }
   ]
 }

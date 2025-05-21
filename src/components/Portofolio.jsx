@@ -150,6 +150,7 @@ const Portfolio = () => {
                     fontFamily: fonts.primary,
                     color: colors.text,
                     marginBottom: "1rem",
+                    textAlign: "justify",
 
                     fontSize: "0.9rem",
                   }}
@@ -222,8 +223,8 @@ const Portfolio = () => {
               onClick={closeProject}
               style={{
                 position: "absolute",
-                top: "2.3rem",
-                right: "3rem",
+                top: "0.5rem",
+                right: "1rem",
                 background: "none",
                 border: "none",
                 fontSize: "1.5rem",
@@ -391,6 +392,7 @@ const Portfolio = () => {
                     marginBottom: "0.5rem",
                     fontSize: "0.8rem",
                     lineHeight: 1.6,
+                    textAlign: "justify",
                   }}
                 >
                   {selectedProject.description}
@@ -398,7 +400,7 @@ const Portfolio = () => {
 
                 <div
                   style={{
-                    display: "flex",
+                    display: "absolute",
                     flexWrap: "wrap",
                     gap: "0.5rem",
 
@@ -423,30 +425,31 @@ const Portfolio = () => {
                   ))}
                 </div>
 
-                <a
-                  href={selectedProject.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    display: "inline-block",
-                    padding: "0.75rem 1.2rem",
-                    backgroundColor: colors.accent,
-
-                    color: colors.light,
-                    borderRadius: "50px",
-                    textDecoration: "none",
-                    fontFamily: fonts.primary,
-                    fontWeight: "600",
-                    fontSize: "0.8rem",
-                    transition: "all 0.3s ease",
-                    ":hover": {
-                      backgroundColor: colors.primary,
-                      transform: "translateY(-3px)",
-                    },
-                  }}
-                >
-                  Visit Live Site
-                </a>
+                {selectedProject.showUrl && selectedProject.url && (
+                  <a
+                    href={selectedProject.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: "inline-block",
+                      padding: "0.75rem 1.2rem",
+                      backgroundColor: colors.accent,
+                      color: colors.light,
+                      borderRadius: "50px",
+                      textDecoration: "none",
+                      fontFamily: fonts.primary,
+                      fontWeight: "600",
+                      fontSize: "0.8rem",
+                      transition: "all 0.3s ease",
+                      ":hover": {
+                        backgroundColor: colors.primary,
+                        transform: "translateY(-3px)",
+                      },
+                    }}
+                  >
+                    Visit Live Site
+                  </a>
+                )}
               </div>
             </div>
           </div>
