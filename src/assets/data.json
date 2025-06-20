@@ -8,7 +8,7 @@
       "linkedin": "https://linkedin.com/in/henri-setyo-pambudi"
     },
     "contact": {
-      "email": "henrisphy23@gmail.com",
+      "email": "henrisphy23@zohomail.com",
       "phone": "https://wa.me/6282338573092"
     }
   },
@@ -16,18 +16,95 @@
     {
       "id": 1,
       "title": "Digital Wedding Invitation",
-      "description": "A digital wedding invitation web-based full customized using floral theme, text and element arrangement, countdown date, music background, navigation sidebar, masonary gallery, dan form database integration.",
+      "description": "A digital wedding invitation web-based full customized using floral theme, text and element arrangement, countdown date, music background, navigation sidebar, masonry gallery, dan form database integration.",
       "image": [
-        "images/thumbnail1.png",
-        "images/project1-1.png",
-        "images/project1-2.png",
-        "images/project1-3.png",
-        "images/project1-4.png",
-        "images/project1-5.png"
+        "images/elma-irul/thumbnail1.png",
+        "images/elma-irul/project1-1.png",
+        "images/elma-irul/project1-2.png",
+        "images/elma-irul/project1-3.png",
+        "images/elma-irul/project1-4.png",
+        "images/elma-irul/project1-5.png",
+        "images/elma-irul/project1-6.png"
       ],
-      "tags": ["React", "Next.js", ".jsx"],
+      "tags": ["React", "Next.js", ".jsx", "Vite"],
       "url": "https://contoh-link.com",
       "showUrl": false
+    },
+    {
+      "id": 2,
+      "title": "Discussion Forum Website",
+      "description": [
+        "1. A digital discussion forum website customized using elegant-minimalist theme.",
+        " 2. The concept of web-based articles:",
+        "   - Text, element, and animation arrangement",
+        "   - Sorting function for list of articles",
+        "   - Responsive display for desktop, tab, and mobile view",
+        "   - Navigation sidebar",
+        "   - Masonry articles layout.",
+        " 3. Features:",
+        "   - Create Account",
+        "   - Create Post",
+        "   - Forgot Password",
+        "   - Author Dashboard."
+      ],
+      "image": [
+        "images/mas-adi/thumbnail2.png",
+        "images/mas-adi/project2-1.png",
+        "images/mas-adi/project2-2-1.png",
+        "images/mas-adi/project2-2.png",
+
+        "images/mas-adi/project2-3.png",
+        "images/mas-adi/project2-4.png",
+        "images/mas-adi/project2-5.png",
+        "images/mas-adi/project2-6.png",
+        "images/mas-adi/project2-7.png",
+        "images/mas-adi/project2-8.png",
+        "images/mas-adi/project2-9.png",
+        "images/mas-adi/project2-10.png"
+      ],
+      "tags": ["Wordpress", "Elementor", "CSS", "Vite"],
+      "url": "https://contoh-link.com",
+      "showUrl": false
+    },
+    {
+      "id": 3,
+      "title": "To Do List Website",
+      "description": [
+        "1. A to do list website called TaskFlow wih Glasmorphism design and Modern looks.",
+        " 2. Features of TaskFlow:",
+        "   - User dashboard management",
+        "   - Task management",
+        "   - Responsive display for desktop, tab, and mobile view",
+        "   - Interactive navigation bar"
+      ],
+      "image": [
+        "images/taskflow/project3-2.png",
+        "images/taskflow/project3-3.png",
+        "images/taskflow/project3-1.png"
+      ],
+      "tags": ["Vue.js", "CSS", "Vite"],
+      "url": "https://contoh-link.com",
+      "showUrl": true
+    },
+    {
+      "id": 4,
+      "title": "Coffeshop Catalogue Website",
+      "description": [
+        "1. A to do list website called TaskFlow wih Glasmorphism design and Modern looks.",
+        " 2. Features of TaskFlow:",
+        "   - User dashboard management",
+        "   - Task management",
+        "   - Responsive display for desktop, tab, and mobile view",
+        "   - Interactive navigation bar"
+      ],
+      "image": [
+        "images/taskflow/project3-2.png",
+        "images/taskflow/project3-3.png",
+        "images/taskflow/project3-1.png"
+      ],
+      "tags": ["Vue.js", "CSS"],
+      "url": "https://contoh-link.com",
+      "showUrl": true
     }
   ]
 }

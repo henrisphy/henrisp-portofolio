@@ -30,6 +30,18 @@ const Portfolio = () => {
         selectedProject.image.length
     );
   };
+  const truncateDescription = (description, maxLength = 100) => {
+    if (typeof description === "string") {
+      return description.length > maxLength
+        ? description.substring(0, maxLength) + "..."
+        : description;
+    }
+    // Jika description adalah array
+    const joinedDesc = description.join(" ");
+    return joinedDesc.length > maxLength
+      ? joinedDesc.substring(0, maxLength) + "..."
+      : joinedDesc;
+  };
 
   return (
     <section
@@ -151,11 +163,18 @@ const Portfolio = () => {
                     color: colors.text,
                     marginBottom: "1rem",
                     textAlign: "justify",
-
                     fontSize: "0.9rem",
+                    lineHeight: "1.5",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 3, // Batasi jumlah baris
+                    WebkitBoxOrient: "vertical",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
                   }}
                 >
-                  {project.description}
+                  {typeof project.description === "string"
+                    ? truncateDescription(project.description)
+                    : truncateDescription(project.description.join(" "))}
                 </p>
                 <div
                   style={{
@@ -170,10 +189,11 @@ const Portfolio = () => {
                       style={{
                         backgroundColor: colors.secondary,
                         color: colors.light,
-                        padding: "0.25rem 0.75rem",
+                        padding: "0.5rem 0.75rem",
                         borderRadius: "50px",
                         fontSize: "0.75rem",
                         fontFamily: fonts.primary,
+                        fontWeight: "600",
                       }}
                     >
                       {tag}
@@ -400,11 +420,11 @@ const Portfolio = () => {
 
                 <div
                   style={{
-                    display: "absolute",
+                    display: "flex", // Ubah dari "absolute" ke "flex"
                     flexWrap: "wrap",
-                    gap: "0.5rem",
-
+                    gap: "0.3rem", // Tambah jarak menjadi 1rem (16px)
                     marginBottom: "0.8rem",
+                    alignItems: "center", // Untuk alignment vertikal yang konsisten
                   }}
                 >
                   {selectedProject.tags.map((tag, index) => (
@@ -415,9 +435,10 @@ const Portfolio = () => {
                         color: colors.light,
                         padding: "0.5rem 0.8rem",
                         borderRadius: "50px",
-                        fontSize: "0.5rem",
-
+                        fontSize: "0.7rem",
+                        fontWeight: "600",
                         fontFamily: fonts.primary,
+                        margin: "0.2rem", // Tambahkan margin sebagai fallback jika gap tidak support
                       }}
                     >
                       {tag}
