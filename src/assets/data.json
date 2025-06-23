@@ -82,7 +82,7 @@
         "images/taskflow/project3-3.png",
         "images/taskflow/project3-1.png"
       ],
-      "tags": ["Vue.js", "CSS", "Vite"],
+      "tags": ["Vue.js", "CSS", "Vite", "Javascript"],
       "url": "https://contoh-link.com",
       "showUrl": true
     },
@@ -98,12 +98,31 @@
         "   - Interactive navigation bar"
       ],
       "image": [
-        "images/taskflow/project3-2.png",
-        "images/taskflow/project3-3.png",
-        "images/taskflow/project3-1.png"
+        "images/cfc/thumbnail2.png",
+        "images/cfc/project4-1.png",
+        "images/cfc/project4-2.png",
+        "images/cfc/project4-3.png",
+        "images/cfc/project4-4.png",
+        "images/cfc/project4-5.png"
       ],
-      "tags": ["Vue.js", "CSS"],
-      "url": "https://contoh-link.com",
+      "tags": ["React", "CSS", "Javascript", ".jsx"],
+      "url": "https://coffeeshop-catalogue.netlify.app",
+      "showUrl": true
+    },
+    {
+      "id": 5,
+      "title": "Memories Album Website",
+      "description": [
+        "A layout model of memories album website called Memories Wrapping wih Simple design and Modern looks. This website can be custumized more for theme, decorations, and concept depends on customer."
+      ],
+      "image": [
+        "images/mw/project4-1.png",
+        "images/mw/project4-2.png",
+        "images/mw/project4-3.png",
+        "images/mw/project4-4.png"
+      ],
+      "tags": ["Vue.js", "CSS", "Javascript"],
+      "url": "https://memories-wrapping.netlify.app",
       "showUrl": true
     }
   ]
