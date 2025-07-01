@@ -342,7 +342,7 @@ const Contact = () => {
                 color: colors.primary,
               }}
             >
-              Send Secret Message
+              Send Message
             </h3>
 
             {submitStatus === "success" && (

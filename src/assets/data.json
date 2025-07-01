@@ -68,9 +68,29 @@
     },
     {
       "id": 3,
+      "title": "Secret Message Website",
+      "description": [
+        "1. A secret message website cwith Modern design & looks.",
+        " 2. Features of secret message website:",
+        "   - Send message as Anonymous (opstional)",
+        "   - Sending reply just be Admin(My Self)",
+        "   - Responsive display for desktop, tab, and mobile view",
+        "   - Read all of the message that sent"
+      ],
+      "image": [
+        "images/sm/project3-2.png",
+        "images/sm/project3-3.png",
+        "images/sm/project3-1.png"
+      ],
+      "tags": ["Vue.js", "CSS", "Vite", "Javascript"],
+      "url": "https://send-secret-message.netlify.app",
+      "showUrl": true
+    },
+    {
+      "id": 6,
       "title": "To Do List Website",
       "description": [
-        "1. A to do list website called TaskFlow wih Glasmorphism design and Modern looks.",
+        "1. A to do list website called TaskFlow with Glasmorphism design and Modern looks.",
         " 2. Features of TaskFlow:",
         "   - User dashboard management",
         "   - Task management",
@@ -84,18 +104,18 @@
       ],
       "tags": ["Vue.js", "CSS", "Vite", "Javascript"],
       "url": "https://contoh-link.com",
-      "showUrl": true
+      "showUrl": false
     },
     {
       "id": 4,
       "title": "Coffeshop Catalogue Website",
       "description": [
-        "1. A to do list website called TaskFlow wih Glasmorphism design and Modern looks.",
-        " 2. Features of TaskFlow:",
-        "   - User dashboard management",
-        "   - Task management",
-        "   - Responsive display for desktop, tab, and mobile view",
-        "   - Interactive navigation bar"
+        "1. A coffeeshop catalogue website called wih soft-classic design looks.",
+        " 2. Features of coffeeshop catalogue website:",
+        "   - Interactive loading page",
+        "   - Add to chart and calculation price feature",
+        "   - Social media linked button",
+        "   - Responsive display for mobile view"
       ],
       "image": [
         "images/cfc/thumbnail2.png",
