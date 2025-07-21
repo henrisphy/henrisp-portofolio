@@ -50,17 +50,9 @@
       "image": [
         "images/mas-adi/thumbnail2.png",
         "images/mas-adi/project2-1.png",
-        "images/mas-adi/project2-2-1.png",
         "images/mas-adi/project2-2.png",
-
         "images/mas-adi/project2-3.png",
-        "images/mas-adi/project2-4.png",
-        "images/mas-adi/project2-5.png",
-        "images/mas-adi/project2-6.png",
-        "images/mas-adi/project2-7.png",
-        "images/mas-adi/project2-8.png",
-        "images/mas-adi/project2-9.png",
-        "images/mas-adi/project2-10.png"
+        "images/mas-adi/project2-4.png"
       ],
       "tags": ["Wordpress", "Elementor", "CSS", "Vite"],
       "url": "https://contoh-link.com",
