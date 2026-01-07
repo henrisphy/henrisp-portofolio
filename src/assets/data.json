@@ -15,23 +15,6 @@
   "projects": [
     {
       "id": 1,
-      "title": "Digital Wedding Invitation",
-      "description": "A digital wedding invitation web-based full customized using floral theme, text and element arrangement, countdown date, music background, navigation sidebar, masonry gallery, dan form database integration.",
-      "image": [
-        "images/elma-irul/thumbnail1.png",
-        "images/elma-irul/project1-1.png",
-        "images/elma-irul/project1-2.png",
-        "images/elma-irul/project1-3.png",
-        "images/elma-irul/project1-4.png",
-        "images/elma-irul/project1-5.png",
-        "images/elma-irul/project1-6.png"
-      ],
-      "tags": ["React", "Next.js", ".jsx", "Vite"],
-      "url": "https://contoh-link.com",
-      "showUrl": false
-    },
-    {
-      "id": 2,
       "title": "Discussion Forum Website",
       "description": [
         "1. A digital discussion forum website customized using elegant-minimalist theme.",
@@ -52,7 +35,40 @@
         "images/mas-adi/project2-1.png",
         "images/mas-adi/project2-2.png",
         "images/mas-adi/project2-3.png",
-        "images/mas-adi/project2-4.png"
+        "images/mas-adi/project2-4.png",
+        "images/mas-adi/1.png",
+        "images/mas-adi/2.png",
+        "images/mas-adi/3.png"
+      ],
+      "tags": ["Wordpress", "Elementor", "CSS", "Vite"],
+      "url": "https://contoh-link.com",
+      "showUrl": false
+    },
+    {
+      "id": 2,
+      "title": "Himpunan Mahasiswa Website",
+      "description": [
+        " 1. Website customized using elegant-minimalist theme.",
+        " 2. The concept of web-based articles:",
+        "   - Text, element, and animation arrangement",
+        "   - Sorting function for list of articles",
+        "   - Responsive display for desktop, tab, and mobile view",
+        "   - Navigation sidebar",
+        "   - Masonry articles layout.",
+        " 3. Features:",
+        "   - Create Account",
+        "   - Create Post",
+        "   - Forgot Password",
+        "   - Author Dashboard."
+      ],
+      "image": [
+        "images/himpunan/1.png",
+        "images/himpunan/2.png",
+        "images/himpunan/3.png",
+        "images/himpunan/4.png",
+        "images/himpunan/5.png",
+        "images/himpunan/6.png",
+        "images/himpunan/7.png"
       ],
       "tags": ["Wordpress", "Elementor", "CSS", "Vite"],
       "url": "https://contoh-link.com",
@@ -60,6 +76,24 @@
     },
     {
       "id": 3,
+      "title": "Digital Wedding Invitation",
+      "description": "A digital wedding invitation web-based full customized using floral theme, text and element arrangement, countdown date, music background, navigation sidebar, masonry gallery, dan form database integration.",
+      "image": [
+        "images/elma-irul/thumbnail1.png",
+        "images/elma-irul/project1-1.png",
+        "images/elma-irul/project1-2.png",
+        "images/elma-irul/project1-3.png",
+        "images/elma-irul/project1-4.png",
+        "images/elma-irul/project1-5.png",
+        "images/elma-irul/project1-6.png"
+      ],
+      "tags": ["React", "Next.js", ".jsx", "Vite"],
+      "url": "https://contoh-link.com",
+      "showUrl": false
+    },
+
+    {
+      "id": 4,
       "title": "Secret Message Website",
       "description": [
         "1. A secret message website cwith Modern design & looks.",
@@ -79,7 +113,7 @@
       "showUrl": true
     },
     {
-      "id": 6,
+      "id": 5,
       "title": "To Do List Website",
       "description": [
         "1. A to do list website called TaskFlow with Glasmorphism design and Modern looks.",
@@ -99,7 +133,7 @@
       "showUrl": false
     },
     {
-      "id": 4,
+      "id": 6,
       "title": "Coffeshop Catalogue Website",
       "description": [
         "1. A coffeeshop catalogue website called wih soft-classic design looks.",
@@ -122,7 +156,7 @@
       "showUrl": true
     },
     {
-      "id": 5,
+      "id": 7,
       "title": "Memories Album Website",
       "description": [
         "A layout model of memories album website called Memories Wrapping wih Simple design and Modern looks. This website can be custumized more for theme, decorations, and concept depends on customer."
